@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import React from "react";
+import {useMapEvents, Marker, Popup, TileLayer, GeoJSON, FeatureGroup, useMapEvent,Tooltip} from "react-leaflet";
 
 function MapPage() {
     const Map = React.useMemo(
@@ -10,7 +11,10 @@ function MapPage() {
             }),
         []
     );
-    return <Map />;
+
+    return (
+    <Map/>
+    )
 }
 
 export default MapPage;
